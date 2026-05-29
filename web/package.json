@@ -1,0 +1,16 @@
+{
+  "name": "easy-budgeting-web",
+  "version": "1.0.0",
+  "description": "Web version of Easy Budgeting app",
+  "type": "module",
+  "scripts": {
+    "dev": "concurrently \"npm run server\" \"npm run client\"",
+    "server": "node server/index.js",
+    "client": "cd client && npm run dev",
+    "build": "cd client && npm run build",
+    "start": "node server/index.js"
+  },
+  "dependencies": {
+    "concurrently": "^8.2.1"
+  }
+}
